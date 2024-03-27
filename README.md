@@ -7,4 +7,4 @@ The main script (`latency.py`) has no dependencies (outside the standard library
 python latency.py
 ```
 
-Checkout the [blog post](www.inmoth.ca) for more details.
+Checkout the [blog post](www.inmoth.ca/keyboard-latency-testing.html) for more details.

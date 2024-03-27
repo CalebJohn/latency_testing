@@ -31,10 +31,13 @@ try:
 except KeyboardInterrupt:
     pass
 
+delays = [d for d in delays if d > 0.1 and d < 0.4]
+
 mean = sum(delays) / len(delays)
 bucketed = [round(d, 2) for d in delays]
-# This is the formula for variance of sample, rather than variance of
-# population
+
+# This is the formula for variance of sample, rather than
+# variance of a population
 variance = sum([(x - mean) ** 2 for x in delays]) / (len(delays) - 1)
 print("\nmean:     ", mean)
 print("median:   ", sorted(delays)[len(delays) // 2])
